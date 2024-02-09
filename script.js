@@ -1,7 +1,7 @@
 const locationInput = document.getElementById("location-input");
 let dropdown;
 async function search(place) {
-  const geoNameApi = `http://api.geonames.org/postalCodeSearchJSON?placename_startsWith=${place}&maxRows=10&username=arun&country=IN`;
+  const geoNameApi = `https://secure.geonames.org/postalCodeSearchJSON?placename_startsWith=${place}&maxRows=10&username=arun&country=IN`;
 
   try {
     const res = await fetch(geoNameApi);
